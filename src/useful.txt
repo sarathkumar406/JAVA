@@ -1,0 +1,121 @@
+Construction Based Dependency Injection– It is achieved when the Spring container invokes a constructor with arguments and each having some dependency on the other class.
+Setter-based Dependency Injection- It is achieved when the Spring container calls the setter method of beans after invoking a constructor with no arguments to instantiate the bean.
+
+selection sort pseudo-code
+--------------------------
+for i = 0 to A.length - 2 
+   minIndex = i;
+   for j = i+1 to A.length - 1
+     if(data[j] < data[minIndex])
+         minIndex = j;
+     temp = data[minIndex];
+     data[minIndex] = data[i];
+     data[i] = temp;
+
+
+Insertioin sort pseudo - code
+-----------------------------
+for i = 0 to A.length - 1
+   current = A[i]
+   j = i - 1;
+      while j >= 0 && A[j] > current
+	A[j+1] = A[j]
+	j = j-1
+     A[j+1] = current
+
+Bubble sort is very inefficient.
+
+selection sort is better than bubble sort and Runnig time is independent of ordering of elements.
+
+Insertion sort Relativly good for small list and Relatively good for partially sorted lists.
+
+
+Data Structure
+==============
+A data Structue (DS) is a way of organizing data so that it can be used effectively.
+
+WHY
+====
+- they are essential ingredients in creating fast and powerful algorithms
+- They help to manage and organize data.
+- They make code cleaner and easier to understand.
+
+Abstract Data Types vs Data Structures
+======================================= 
+ADT is an abstracttion of a data structure which provides only the interface to which a data structure must adhere to.
+
+The interface does not give any specific details about how something shuld be implemented or in what programming language.
+
+ADT      Implementation (DS)
+===	 ===================
+LIST	- Dynamic Array & Linked List
+
+Queue	- Linked List based Queue & Array Based Queue & Satck based Queue
+
+Map	- Tree Map & Hash Map / Hash Table
+
+Vehicle	- Golf Cart & Bicycle & Smart Car
+
+
+Computational Complexity Analysis
+==================================
+- How much time does this algorithm need to finish?
+
+- How much space does this algorithm need for its computation?
+
+Big-o Notation
+===============
+
+
+
+
+
+Static Array & DYnamic Array
+============================
+A static Array is a fixed length container containing n elements indexable from the range 0,n-1.
+
+Indexable
+=========
+This means that each solt/index in the array can be referenced with a number.
+
+where we can used static array?
+- storing and accessing sequential data.
+- Temporarily storing objects
+- Used by IO routines as buffers.
+- Lookup tables and inverse lookup tables.
+- Can be used to return multiple values from a function.
+- Used in dynamic programming to cache answers to sub-problems.
+
+
+Spring
+======
+- Framework for providing comprehensive infrastructural support for developing java Apps.
+- Provides the plumbing.
+- OOP best practices built in.
+- DRY (Don't Repeat Yourself) principles.
+
+- POJO - Plain Old Java Object.
+- JavaBeans - Simple Objects with only setters and getters.
+- Spring Beans - POJO's configures in the application context.
+- DTO - Bean used to move state between layers.
+
+IOC 
+===
+- Ioc provides mechanism of dependency Injection.
+- ApplicationContext wraps the BeanFactory, which servi the beans to the runtime of the application.
+- Spring boot provides the auto-configuration of the ApplicationContext.
+
+Why SPring boot
+---------------
+- Supports rapid development.
+- Removes boilerplate of application setup.
+- Many uses.
+- Cloud native support, but also traditional.
+
+Key components
+--------------
+- Embedded Tomcat (or Others )
+- Auto-configuration of ApplicationContext.
+- Automatic servlet mappings.
+- Embedded database support and hibernate/JPA dialet.
+- Automatic controller mappings.
